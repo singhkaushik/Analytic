@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(223, 223, 223);
+}
+
+.main_body {
+  font-family: var(--primary-font-family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--green-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondry-font-family);
+  font-family: Poppins;
+  font-size: 28px;
+  margin: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  color: #54547b;
+}
+
+.p {
+  width: 124px;
+  margin-left: 25px;
+  margin-right: 120px;
+  float: left;
+  color: #111c44;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.header {
+  height: 67px;
+  border-radius: 2px;
+  display: flex;
+  margin: 8px;
+  padding-left: 24px;
+  background-color: #fff;
+}
+.img {
+  width: 204px;
+  height: 136px;
+  margin: 25px;
+  border-radius: 2px;
+}
+.gap_between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.btn {
+  margin: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  width: 109px;
+  height: 32px;
+  background: #5d78ff;
+  border-radius: 3px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.btn-1 {
+  margin: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  width: 109px;
+  height: 32px;
+  background: rgb(36, 245, 91);
+  border-radius: 3px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.Table {
+  border-radius: 2px;
+  width: 1344px;
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+table tr th {
+  width: 33.3%;
+  height: 68px;
+  background: #ffffff;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  border-radius: 4px;
+}
+table tr td {
+  width: 33.3%;
+  height: 30px;
+  background: #ffffff;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  border: 0.421178px solid #ffffff;
+}
+.table {
+  width: 90%;
+  margin: 2%;
+}
+.td1 {
+  width: 10%;
+  vertical-align: top;
+  padding: 20px;
+  padding-top: 34px;
+}
+.td2 {
+  width: 90%;
+  padding: 20px;
+}
+.upload_btn {
+  width: 169px;
+  height: 37px;
+  background: rgba(93, 120, 255, 0.2);
+  border-radius: 4px;
+  border: none;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5d78ff;
+}
+.text_box {
+  box-sizing: border-box;
+  width: 420px;
+  height: 36px;
+  border: 1px solid #e5eaee;
+  border-radius: 4px;
+}
+.cancel_btn {
+  width: 65px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #464e5f;
+}
+.marg {
+  margin: 20px;
+}
+.chart1 {
+  width: 329px;
+  height: 198px;
+  background: #f2f3f8;
+  border-radius: 2px;
+  margin: 8px;
+}
+.chart2 {
+  width: 329px;
+  height: 198px;
+  background: rgba(255, 168, 0, 0.2);
+  border-radius: 2px;
+  margin: 8px;
+}
+
+.analyze_back {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+#form-file-upload {
+  box-sizing: border-box;
+  width: 320px;
+  height: 169px;
+  background: #eff3fe;
+  border: 1px dashed #5d78ff;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.2761px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  color: #545454;
+}
+
+#input-file-upload {
+  display: none;
+}
+
+#label-file-upload {
+  border-radius: 1rem;
+}
+
+#label-file-upload.drop-active {
+  background-color: #ffffff;
+}
+
+.upload-button {
+  cursor: pointer;
+  border: none;
+  background-position: center;
+  background-color: #5d78ff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  border-radius: 25px;
+}
+#drop-file-element {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}

@@ -1,0 +1,47 @@
+#progress {
+  position: relative;
+  margin-bottom: 30px;
+  width: 70%;
+  margin: 30px;
+}
+#progress_bar {
+  position: absolute;
+  background: lightseagreen;
+  height: 5px;
+  width: 0%;
+  top: 50%;
+  left: 0;
+}
+#progress_num {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#progress_num::before {
+  content: "";
+  background: #e5eaee;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  z-index: -1;
+}
+#progress_num .step {
+  border: 6.53271px solid #e5eaee;
+  border-radius: 100%;
+  width: 28.31px;
+  height: 28.31px;
+  line-height: 28.31px;
+  text-align: center;
+  background-color: rgb(223, 223, 223);
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+#progress_num .step.active {
+  border: 6.53271px solid #ff5050;
+}
