@@ -4,6 +4,7 @@ import { Route, Redirect } from "react-router-dom";
 import AddModel from "./Pages/AddModel";
 import Transform from "./Pages/Transform";
 import Analyze from "./Pages/Analyze";
+import Train from "./Pages/Train";
 import React from "react";
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
       </Route>
       <Route path="/analyze">
         <Analyze />
+      </Route>
+      <Route path="/train">
+        <Train />
       </Route>
     </div>
   );

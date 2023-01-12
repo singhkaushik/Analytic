@@ -1,5 +1,5 @@
 import React from "react";
-import ActiveCircle from "./ActiveCircle";
+import ActiveCircle from "../Component/ActiveCircle";
 import UploadView from "../Component/UploadView";
 import "../Component/css/Analytic.css";
 const AddModel = () => {
