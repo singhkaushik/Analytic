@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../Component/Header";
 import ActiveCircle from "../Component/ActiveCircle";
 import LineChart from "../Chart/LineChart";
 import BarChart from "../Chart/BarChart";
@@ -7,9 +8,7 @@ import "../Component/css/Analytic.css";
 const Analyze = () => {
   return (
     <div>
-      <div className="header">
-        <h1>Create Model: Analyze</h1>
-      </div>
+      <Header name="Create Model: Analyze" />
       <ActiveCircle />
       <div className="analyze_back">
         <div className="chart1">

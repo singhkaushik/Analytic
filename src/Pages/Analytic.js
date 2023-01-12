@@ -8,7 +8,7 @@ import Group from "../Component/assets/images/Group.png";
 const Analytic = () => {
   return (
     <div>
-      <Header />
+      <Header name="Analytic" />
       <div>
         <img src={Frame2} alt="pho" />
         <img src={Group} className="img" alt="pho" />

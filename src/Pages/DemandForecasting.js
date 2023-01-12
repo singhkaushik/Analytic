@@ -1,4 +1,5 @@
 import "../Component/css/Analytic.css";
+import Header from "../Component/Header";
 import { Link } from "react-router-dom";
 
 import TableDemand from "../Component/TableDemand";

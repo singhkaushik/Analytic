@@ -1,14 +1,13 @@
 import ActiveCircle from "../Component/ActiveCircle";
 import { Link } from "react-router-dom";
 import "../Component/css/Analytic.css";
+import Header from "../Component/Header";
 //import TableDemand from "../Component/TableDemand";
 import Companies from "../Component/Company";
 const Transform = () => {
   return (
     <div>
-      <div className="header">
-        <h1>Create Model: Transform</h1>
-      </div>
+      <Header name="Create Model: Transform" />
       <ActiveCircle />
       <div>
         {/* <TableDemand /> */}

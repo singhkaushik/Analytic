@@ -10,6 +10,7 @@ const Companies = () => {
       })
       .then((data) => {
         setUsers(data);
+        this.props(data);
       });
   };
 

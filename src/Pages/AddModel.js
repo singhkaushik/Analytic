@@ -1,13 +1,12 @@
 import React from "react";
+import Header from "../Component/Header";
 import ActiveCircle from "../Component/ActiveCircle";
 import UploadView from "../Component/UploadView";
 import "../Component/css/Analytic.css";
 const AddModel = () => {
   return (
     <div>
-      <div className="header">
-        <h1>Create Model: Get Data</h1>
-      </div>
+      <Header name="Create Model: Get Data" />
       <div>
         <ActiveCircle />
       </div>

@@ -237,3 +237,9 @@ h6 {
   height: 100%;
   border-radius: 1rem;
 }
+.trainchart {
+  width: 511px;
+  border-radius: 0px;
+  padding: 16px 23px 31px 23px;
+  background: #ffffff;
+}
