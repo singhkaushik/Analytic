@@ -25,44 +25,66 @@ const UploadView = () => {
   //
   //
   const [csvValue, setCsvValue] = useState("");
-
-  const uploadFile = (e) => {
-    let file = e.target.files[0];
-    // fileData["fileName"] = file[0].name;
-    setFileChangehandler(file.name);
-    const files = e.target.files;
-    console.log(files);
-    if (files) {
-      console.log(files[0]);
-      Papa.parse(files[0], {
-        complete: function data(results) {
-          console.log("Finished:", results.data);
-          const val = results.data;
-          setCsvValue(val);
+  const sendRequst = async () => {
+    try {
+      const res = await axios.post("http://localhost:4000/test", {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          data: csvValue,
         },
+        body: JSON.stringify(csvValue),
       });
+    } catch (err) {
+      console.log(err);
     }
   };
-  const [state, setState] = useState("");
+  // const sendRequst = () => {
+  //   const url = "http://localhost:4000/test";
+  //   fetch(url, {
+  //     method: "POST",
+  //     headers: {
+  //       // Accept: "application/json",
+  //       "Content-Type": "application/json",
+  //       "Access-Control-Allow-Origin": "*",
+  //     },
+  //     body: JSON.stringify(csvValue),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("success", data);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error", error);
+  //     });
+  // };
 
-  const onChangeHandler = (event) => {
+  // const handleSubmit = () => {
+  //   console.log("clicked");
+  //  // sendRequst();
+  // };
+  //
+  //
+  // const uploadFile = (e) => {
+  //   let file = e.target.files[0];
+  //   // fileData["fileName"] = file[0].name;
+  //   setFileChangehandler(file.name);
+  //   const files = e.target.files;
+  //   console.log(files);
+  //   if (files) {
+  //     console.log(files[0]);
+  //     Papa.parse(files[0], {
+  //       complete: function data(results) {
+  //         console.log("Finished:", results.data);
+  //         const val = results.data;
+  //         setCsvValue(val);
+  //       },
+  //     });
+  //   }
+  // };
+  onChangeHandler = (event) => {
     console.log(event.target.files[0]);
-    setState({
-      selectedFile: event.target.files[0],
-      loaded: 0,
-    });
-  };
-  const onClickHandler = () => {
-    const data = new FormData();
-    data.append("file", state.selectedFile);
-    axios
-      .post("http://localhost:4000/test", data, {
-        // receive two    parameter endpoint url ,form data
-      })
-      .then((res) => {
-        // then print response status
-        console.log(res.statusText);
-      });
   };
   const inputRef = React.useRef(null);
   // triggers the input when the button is clicked
@@ -91,7 +113,7 @@ const UploadView = () => {
                   className="text_box"
                   placeholder="  Upload CSV,JSON,XML or provide data URL"
                 ></input>
-                <button name="import" onClick={onClickHandler} className="btn">
+                <button name="import" className="btn" onClick={sendRequst}>
                   Import
                 </button>
                 <form
@@ -103,7 +125,8 @@ const UploadView = () => {
                     type="file"
                     id="input-file-upload"
                     multiple={true}
-                    onChange={uploadFile}
+                    // onChange={uploadFile}
+                    onChange={this.onChangeHandler}
                   />
                   <label id="label-file-upload" htmlFor="input-file-upload">
                     <div>
