@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 const MainContainer = styled.div`
   width: 60%;
@@ -118,6 +118,7 @@ const ActiveCircle = () => {
   const prevStep = () => {
     setActiveStep(activeStep - 1);
   };
+
   const totalSteps = steps.length;
   const width = `${(100 / (totalSteps - 1)) * (activeStep - 1)}%`;
   return (

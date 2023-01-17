@@ -1,5 +1,5 @@
 import ActiveCircle from "../Component/ActiveCircle";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Header from "../Component/Header";
 import "../Component/css/Analytic.css";
 import LineChart from "../Chart/LineChart";
@@ -17,9 +17,7 @@ const Train = () => {
       </div>
       <div className="marg">
         <button className="cancel_btn">Cancel</button>
-        <Link to="">
-          <button className="btn">Next</button>
-        </Link>
+        <button className="btn">Next</button>
       </div>
     </div>
   );
